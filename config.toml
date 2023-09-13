@@ -1,0 +1,156 @@
+baseURL = "https://blog.edward-p.xyz/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+theme        = "hello-friend-ng"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+disqusShortname = "3dw42d-p-8109"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+posts = "/posts/:year/:month/:filename/"
+
+[author]
+name = "Edward-P"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Metadata mostly used in document's head
+  # 
+  description = "Edward-P's Blog"
+  keywords = ""
+  images = [""]
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  #
+  # gitUrl = ""
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  #
+  disableReadOtherPosts = false
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = ["/css/blogroll.css"]
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  #
+  defaultTheme = "dark"
+  themeColor = "#252627"
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+  # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/edward-p"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  # [params.portrait]
+  #   path     = "/img/image.jpg"
+  #   alt      = "Portrait"
+  #   maxWidth = "50px"
+
+  # Social icons
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/Edward_P"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:edward@edward-p.xyz"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/edward-p"
+
+[languages]
+  [languages.zh-cn]
+    title = "3dw42d-p'5 8109"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  [languages.zh-cn.params]
+    homeSubtitle = "a.k.a. edward-p's blog"
+    readOtherPosts = "其他文章"
+    subtitle = "A fake developer's monologue."
+    keywords = ""
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Archives"
+    url        = "/posts"
+    weight     = "1"
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags"
+    weight     = "10"
+  [[menu.main]]
+    identifier = "blogroll"
+    name       = "Blogroll"
+    url        = "/blogroll"
+    weight     = "20"
