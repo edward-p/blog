@@ -34,6 +34,7 @@ disableHugoGeneratorInject = false
 
 [permalinks]
 posts = "/posts/:year/:month/:filename/"
+hamradio = "/hamradio/:year/:month/:filename/"
 
 [author]
 name = "Edward-P"
@@ -88,9 +89,9 @@ name = "Edward-P"
 
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
-  #
-  # footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
-  # footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+  
+  footerLeft = "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
+  footerRight = "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
 
   # Colors for favicons
   #
@@ -141,16 +142,21 @@ name = "Edward-P"
   # And you can even create generic menu
   [[menu.main]]
     identifier = "posts"
-    name       = "Archives"
+    name       = "归档"
     url        = "/posts"
     weight     = "1"
   [[menu.main]]
+    identifier = "hamradios"
+    name       = "业余无线电"
+    url        = "/hamradio"
+    weight     = "2"
+  [[menu.main]]
     identifier = "tags"
-    name       = "Tags"
+    name       = "标签"
     url        = "/tags"
     weight     = "10"
   [[menu.main]]
     identifier = "blogroll"
-    name       = "Blogroll"
+    name       = "友链"
     url        = "/blogroll"
     weight     = "20"
