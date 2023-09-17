@@ -1,6 +1,7 @@
 ---
 title: "介绍"
 date: 2023-09-17T11:39:03+08:00
+type: "posts"
 draft: false
 toc: false
 images:
