@@ -1,12 +1,13 @@
 .blogroll {
   height: 100px;
-  padding: 10px 10px;
+  padding: 5px;
   margin-top: 12px;
   margin-bottom: 32px;
 }
 
 .blogroll:hover {
   cursor: pointer;
+  filter: contrast(80%) brightness(1.2);
 }
 
 .blogroll:hover .blog {
@@ -20,9 +21,9 @@
 .blogroll .avatar {
   float: left;
   border-radius: 8.5%;
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
 }
 
 .blogroll .blog {

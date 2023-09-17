@@ -36,7 +36,7 @@ draft: false
             bio="Golang / Rust / Nix{,OS}"
             url="https://nichi.co">}}
 
-{{<blogroll avatar="https://www.monlor.com/images/favicon-64x64-monlor.ico"
+{{<blogroll avatar="https://avatars.githubusercontent.com/u/20394007?v=4"
             blog="Monlor's Blog (aka. 萌勒君)"
             bio="才疏学浅，但有一颗学习和折腾的心！"
             url="https://www.monlor.com">}}
