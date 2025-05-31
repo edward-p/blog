@@ -3,7 +3,9 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 theme        = "hello-friend-ng"
 
-paginate  = 10
+[pagination]
+  pagerSize= 10
+
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -33,11 +35,9 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-posts = "/posts/:year/:month/:filename/"
-hamradio = "/hamradio/:year/:month/:filename/"
+    posts = "/posts/:year/:month/:contentbasename/"
+    hamradio = "/hamradio/:year/:month/:contentbasename/"
 
-[author]
-name = "Edward-P"
 
 [taxonomies]
     category = "blog"
@@ -45,6 +45,8 @@ name = "Edward-P"
     series   = "series"
 
 [params]
+  [params.author]
+    name = "Edward-P"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
@@ -75,7 +77,7 @@ name = "Edward-P"
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  customCSS = ["/css/blogroll.css"]
+  customCSS = []
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo

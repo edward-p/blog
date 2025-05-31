@@ -1,8 +1,14 @@
+.blogroll-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .blogroll {
   height: 100px;
   padding: 5px;
   margin-top: 12px;
   margin-bottom: 32px;
+  width: 380px;
 }
 
 .blogroll:hover {

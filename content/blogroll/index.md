@@ -2,9 +2,15 @@
 title: "Blogroll"
 date: 2021-07-07T22:44:47+08:00
 draft: false
+layout: blogroll
+resources:
+  - src: blogroll.css
+    title: style
 ---
 
 以下排名不分先后
+
+{{<blogroll-box>}}
 
 {{<blogroll avatar="https://avatars.githubusercontent.com/u/34574198?v=4"
             blog="liolok"
@@ -38,7 +44,7 @@ draft: false
 
 {{<blogroll avatar="https://avatars.githubusercontent.com/u/20394007?v=4"
             blog="Monlor's Blog (aka. 萌勒君)"
-            bio="才疏学浅，但有一颗学习和折腾的心！"
+            bio="生命不息，折腾不止！"
             url="https://www.monlor.com">}}
 
 {{<blogroll avatar="https://avatars.githubusercontent.com/u/6873988?v=4"
@@ -56,12 +62,12 @@ draft: false
             bio="爱生活, 爱Coding, 做一个自由的小极客!"
             url="https://blog.droidmax.top/">}}
 
-{{<blogroll avatar="https://sh.alynx.one/images/Mikoto_Karon_White.webp"
+{{<blogroll avatar="https://sh.alynx.one/images/Mikoto-Karon-White.webp"
             blog="Alynx Zhou"
             bio="周老师，日常使用的 DE 是 GNOME（日常遭到迫害）"
             url="https://sh.alynx.one/">}}
 
-{{<blogroll avatar="https://cdn.astrianzheng.cn/favicon.png"
+{{<blogroll avatar="https://avatars.githubusercontent.com/u/4896770?v=4"
             blog="本格异想录 (aka. Astrian Zheng)"
             bio="钥之所指，心之所向。"
             url="https://astrianzheng.cn">}}
@@ -76,7 +82,20 @@ draft: false
             bio="Archer/Fisher/KDEer AUR prime packager"
             url="https://blog.peven.me">}}
 
-{{<blogroll avatar="https://s1.ax1x.com/2018/10/21/iBXNHf.jpg"
-            blog="Infinite随想"
-            bio="We accept the love; we think we deserve."
-            url="https://wallflower.life">}}
+{{<blogroll avatar="https://avatars.githubusercontent.com/u/14978021?v=4"
+            blog="JerryXiao"
+            bio="Hello World = 新年快乐?"
+            url="https://jerryxiao.cc">}}
+
+{{<blogroll avatar="https://avatars.githubusercontent.com/u/440661?v=4"
+            blog="依云's Blog"
+            bio="Happy coding, happy living!"
+            url="https://blog.lilydjwg.me">}}
+
+{{<blogroll avatar="https://avatars.githubusercontent.com/u/172495?v=4"
+            blog="oldherl"
+            bio="Hydroxide 胡言乱语之一氧化二氢"
+            url="https://blog.oldherl.one">}}
+
+{{</blogroll-box>}}
+
