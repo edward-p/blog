@@ -44,7 +44,7 @@ disableHugoGeneratorInject = false
 
 [services]
   [services.disqus]
-    shortname = 'your-disqus-shortname'
+    shortname = '3dw42d-p-8109'
 
 [params]
   [params.author]
