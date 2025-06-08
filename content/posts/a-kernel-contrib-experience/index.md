@@ -168,7 +168,7 @@ echo 1 | sudo tee /sys/class/sound/hwC0D0/reconfig
 4. 如果麦克风的 pin 的 VREF 已经默认在50、80、100任意一个上，但录音软件没有一点输入信号，大概率就是麦克风使用了扬声器或者耳机的 pin 上的 Vref 作为麦克风参考电位。我的设备就是这种情况，找到 0x1b（耳机所在pin） 发现 0x1b 的 VREF 默认果然是在 HIZ （高阻态）上，将其改为 50、80、100，如果麦克风 pin 设置正确了，此时录音软件上应该会看到有输入信号跳变。
 5. 若已经有输入信号了，观察音频波形图正负值是否均匀，若不均匀则调整 VREF 的大小，若还是没有输入信号，则换一个 pin，回到第1步。
 
-![hda-analyzer](/images/Screenshot_20230120_153144.png)
+![hda-analyzer](images/Screenshot_20230120_153144.png)
 
 ### 确认麦克风是否有自己的接口检测
 
