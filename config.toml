@@ -12,8 +12,6 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-disqusShortname = "3dw42d-p-8109"
-
 archetypeDir = "archetypes"
 contentDir   = "content"
 dataDir      = "data"
@@ -43,6 +41,10 @@ disableHugoGeneratorInject = false
     category = "blog"
     tag      = "tags"
     series   = "series"
+
+[services]
+  [services.disqus]
+    shortname = 'your-disqus-shortname'
 
 [params]
   [params.author]
@@ -131,7 +133,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "telegram"
-    url  = "https://t.me/Edward_P"
+    url  = "https://t.me/real_edward_p"
 
   [[params.social]]
     name = "email"
@@ -171,3 +173,5 @@ disableHugoGeneratorInject = false
     name       = "友链"
     url        = "/blogroll"
     weight     = "20"
+
+
